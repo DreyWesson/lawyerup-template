@@ -186,6 +186,9 @@ p.normal-text {
   margin: 0 auto;
   border: 2px solid #f2c64d;
 }
+
+/* Practice Area 
+   ============================= */
 .practice h3 {
   font-family: Poppins;
   font-style: normal;
@@ -201,6 +204,33 @@ p.normal-text {
   color: #000000;
   max-width: 60ch;
   margin: 0 auto;
+}
+
+.card1 {
+  max-width: 100%;
+  /* width: 280px; */
+  height: 374px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/images/card1b.jpeg");
+}
+.card1 i {
+  color: #f2c64d;
+  margin-bottom: 30px;
+}
+.card1 h4 {
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: bold;
+}
+.card1 p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
 }
 /* Responsiveness
    ============================= */
