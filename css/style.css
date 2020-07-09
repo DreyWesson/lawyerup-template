@@ -31,7 +31,6 @@ li a {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  /* border-radius: 10px; */
   background-image: url("/images/lawyer-up.jpeg");
   background-size: cover;
   background-position: 30px center;
@@ -70,18 +69,29 @@ li a {
 /* Who We Are 
    ============================= */
 .justice {
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 30px;
 }
 .justice-content {
-  margin: 25px;
+  /* margin: 25px; */
 }
 
 img.photo-size {
   width: 290px;
   min-width: 200px;
   max-width: 417px;
+}
+.justice-photo {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 0;
+}
+.court-house {
+  position: absolute;
+  width: 200px;
+  height: 170px;
+  left: -85px;
+  top: 150px;
 }
 .heading-text {
   font-family: Roboto;
@@ -95,8 +105,8 @@ img.photo-size {
   top: 954px;
   color: #333333;
 }
-p.normal-text {
-  /* width: 570px; */
+/* p.normal-text {
+  width: 570px;
   height: 455px;
   left: 750px;
   top: 1016px;
@@ -105,20 +115,32 @@ p.normal-text {
   font-weight: normal;
   font-size: 16px;
   line-height: 35px;
-  /* or 219% */
   color: #333333;
+} */
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .court-house {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    left: -25px;
+    top: 150px;
+    z-index: 2;
+  }
 }
-.court-house {
-  position: absolute;
-  width: 250px;
-  height: 230px;
-  left: -158px;
-  top: 150px;
-}
-.justice {
-  width: 100%;
+@media screen and (min-width: 501px) and (max-width: 759px) {
+  .court-house {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    left: 65px;
+    top: 150px;
+    z-index: 2;
+  }
 }
 @media screen and (min-width: 960px) {
+  /* Jumbotron 
+   ============================= */
   .jumbotron {
     height: 500px;
     background-position: 230px center;
@@ -132,5 +154,14 @@ p.normal-text {
     font-weight: 600;
     font-size: 56px;
     line-height: 80px;
+  }
+
+  .court-house {
+    position: absolute;
+    width: 250px;
+    height: 230px;
+    left: 15px;
+    top: 150px;
+    z-index: 2;
   }
 }
