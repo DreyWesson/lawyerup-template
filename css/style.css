@@ -104,8 +104,6 @@ img.photo-size {
   color: #333333;
 }
 p.normal-text {
-  /* width: 570px; */
-  /* height: 455px; */
   left: 750px;
   top: 1016px;
   font-family: Poppins;
@@ -115,7 +113,20 @@ p.normal-text {
   line-height: 35px;
   color: #333333;
 }
-
+.stats {
+  color: #f4f4f4;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://civichall.org/wp-content/uploads/2020/05/bill-oxford-OXGhu60NwxU-unsplash-e1588358981893.jpg");
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  width: 100%;
+}
+.stats p {
+  font-size: 16px;
+}
 @media screen and (min-width: 400px) and (max-width: 550px) {
   .court-house {
     position: absolute;
