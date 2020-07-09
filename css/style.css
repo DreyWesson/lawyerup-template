@@ -31,7 +31,6 @@ li a {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  /* border-radius: 10px; */
   background-image: url("/images/lawyer-up.jpeg");
   background-size: cover;
   background-position: 30px center;
@@ -64,30 +63,32 @@ li a {
   font-style: normal;
   color: #333333;
   font-size: 18px;
-  /* line-height: 50px; */
 }
 
 /* Who We Are 
    ============================= */
-.justice {
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
 .justice-content {
-  margin: 25px;
+  margin-right: 25px;
 }
+
 img.photo-size {
-  width: 100px;
+  width: 290px;
   min-width: 200px;
   max-width: 417px;
 }
+.justice-photo {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 0;
+}
 .court-house {
   position: absolute;
-  width: 120px;
-  height: 80px;
-  left: -70px;
-  top: 100px;
+  width: 200px;
+  height: 170px;
+  left: -85px;
+  top: 150px;
 }
 .heading-text {
   font-family: Roboto;
@@ -102,7 +103,8 @@ img.photo-size {
   color: #333333;
 }
 p.normal-text {
-  height: 455px;
+  /* width: 570px; */
+  /* height: 455px; */
   left: 750px;
   top: 1016px;
   font-family: Poppins;
@@ -110,14 +112,42 @@ p.normal-text {
   font-weight: normal;
   font-size: 16px;
   line-height: 35px;
-  /* or 219% */
   color: #333333;
 }
 
-.justice {
-  margin-left: 150px;
+@media screen and (min-width: 400px) and (max-width: 550px) {
+  .court-house {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    left: 10px;
+    top: 150px;
+    z-index: 2;
+  }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 551px) and (max-width: 799px) {
+  .court-house {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    left: 120px;
+    top: 150px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 990px) {
+  .court-house {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    left: 200px;
+    top: 150px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Jumbotron 
+   ============================= */
   .jumbotron {
     height: 500px;
     background-position: 230px center;
@@ -132,19 +162,13 @@ p.normal-text {
     font-size: 56px;
     line-height: 80px;
   }
-  .justice {
-    margin-left: 0;
-  }
-  img.photo-size {
-    width: 290px;
-    min-width: 200px;
-    max-width: 417px;
-  }
+
   .court-house {
     position: absolute;
     width: 250px;
     height: 230px;
-    left: -158px;
+    left: 15px;
     top: 150px;
+    z-index: 2;
   }
 }
