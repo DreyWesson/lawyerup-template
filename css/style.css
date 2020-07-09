@@ -96,7 +96,7 @@ img.photo-size {
   color: #333333;
 }
 p.normal-text {
-  width: 570px;
+  /* width: 570px; */
   height: 455px;
   left: 750px;
   top: 1016px;
