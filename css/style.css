@@ -77,11 +77,17 @@ li a {
 .justice-content {
   margin: 25px;
 }
-
 img.photo-size {
-  width: 290px;
+  width: 100px;
   min-width: 200px;
   max-width: 417px;
+}
+.court-house {
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  left: -70px;
+  top: 100px;
 }
 .heading-text {
   font-family: Roboto;
@@ -96,7 +102,6 @@ img.photo-size {
   color: #333333;
 }
 p.normal-text {
-  width: 570px;
   height: 455px;
   left: 750px;
   top: 1016px;
@@ -108,15 +113,9 @@ p.normal-text {
   /* or 219% */
   color: #333333;
 }
-.court-house {
-  position: absolute;
-  width: 250px;
-  height: 230px;
-  left: -158px;
-  top: 150px;
-}
+
 .justice {
-  width: 100%;
+  margin-left: 150px;
 }
 @media screen and (min-width: 960px) {
   .jumbotron {
@@ -132,5 +131,20 @@ p.normal-text {
     font-weight: 600;
     font-size: 56px;
     line-height: 80px;
+  }
+  .justice {
+    margin-left: 0;
+  }
+  img.photo-size {
+    width: 290px;
+    min-width: 200px;
+    max-width: 417px;
+  }
+  .court-house {
+    position: absolute;
+    width: 250px;
+    height: 230px;
+    left: -158px;
+    top: 150px;
   }
 }
