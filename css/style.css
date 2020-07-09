@@ -1,0 +1,136 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Navigation 
+   ============================= */
+nav {
+  background-color: white;
+}
+a.navbar-brand {
+  /* font-family: "Merienda One", cursive; */
+  font-family: Cochin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #333333;
+}
+li a {
+  font-family: "Poppins", sans-serif;
+}
+/* Jumbotron 
+   ============================= */
+.jumbotron {
+  color: white;
+  height: 350px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  /* border-radius: 10px; */
+  background-image: url("/images/lawyer-up.jpeg");
+  background-size: cover;
+  background-position: 30px center;
+}
+#jumboBtn {
+  margin-top: 1.5em;
+}
+.jumbotron h1 {
+  font-size: 3em;
+}
+.jumbo {
+  padding-left: 0;
+}
+.jumbo h1 {
+  width: 250px;
+  height: 80px;
+  left: 50px;
+  top: 100px;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 24px;
+  line-height: 40px;
+}
+.jumbo button {
+  background-color: #f2c64d;
+  border-radius: 5px;
+}
+.jumbo a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #333333;
+  font-size: 18px;
+  /* line-height: 50px; */
+}
+
+/* Who We Are 
+   ============================= */
+.justice {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.justice-content {
+  margin: 25px;
+}
+
+img.photo-size {
+  width: 290px;
+  min-width: 200px;
+  max-width: 417px;
+}
+.heading-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  width: 175px;
+  height: 38px;
+  left: 750px;
+  top: 954px;
+  color: #333333;
+}
+p.normal-text {
+  width: 570px;
+  height: 455px;
+  left: 750px;
+  top: 1016px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 35px;
+  /* or 219% */
+  color: #333333;
+}
+.court-house {
+  position: absolute;
+  width: 250px;
+  height: 230px;
+  left: -158px;
+  top: 150px;
+}
+.justice {
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .jumbotron {
+    height: 500px;
+    background-position: 230px center;
+  }
+  .jumbo h1 {
+    width: 565px;
+    height: 160px;
+    left: 120px;
+    top: 250px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
