@@ -65,7 +65,7 @@ li a {
   font-size: 18px;
 }
 
-/* Who We Are 
+/* About - Who We Are 
    ============================= */
 .justice-content {
   margin-right: 25px;
@@ -113,6 +113,7 @@ p.normal-text {
   line-height: 35px;
   color: #333333;
 }
+
 .stats {
   color: #f4f4f4;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -127,6 +128,51 @@ p.normal-text {
 .stats p {
   font-size: 16px;
 }
+
+.second-jumbo h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 81px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.second-jumbo p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1em;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  max-width: 75ch;
+  margin: auto;
+}
+.second-jumbo button {
+  /* opacity: 0; */
+  color: white;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+.second-jumbo a {
+  color: #ffffff;
+}
+.second-jumbo .jumbotron {
+  color: white;
+  height: 350px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url("https://www.stx.ox.ac.uk/sites/default/files/styles/listing_landscape_image/public/stx/images/page/inaki-del-olmo-nijueqw0rkg-unsplash.jpg?itok=Eggj76a_");
+  background-size: cover;
+  background-position: 30px center;
+  object-fit: cover;
+}
+
+/* Responsiveness
+   ============================= */
 @media screen and (min-width: 400px) and (max-width: 550px) {
   .court-house {
     position: absolute;
@@ -135,6 +181,27 @@ p.normal-text {
     left: 10px;
     top: 150px;
     z-index: 2;
+  }
+  .second-jumbo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 81px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+  .second-jumbo p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    max-width: 75ch;
+    margin: auto;
   }
 }
 @media screen and (min-width: 551px) and (max-width: 799px) {
@@ -146,6 +213,27 @@ p.normal-text {
     top: 150px;
     z-index: 2;
   }
+  .second-jumbo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 81px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+  .second-jumbo p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    max-width: 75ch;
+    margin: auto;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 990px) {
   .court-house {
@@ -155,6 +243,27 @@ p.normal-text {
     left: 200px;
     top: 150px;
     z-index: 2;
+  }
+  .second-jumbo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 81px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+  .second-jumbo p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    max-width: 75ch;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -182,5 +291,26 @@ p.normal-text {
     left: 15px;
     top: 150px;
     z-index: 2;
+  }
+  .second-jumbo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 81px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+  .second-jumbo p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    max-width: 75ch;
+    margin: auto;
   }
 }
