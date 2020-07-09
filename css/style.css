@@ -63,15 +63,12 @@ li a {
   font-style: normal;
   color: #333333;
   font-size: 18px;
-  /* line-height: 50px; */
 }
 
 /* Who We Are 
    ============================= */
-.justice {
-}
 .justice-content {
-  /* margin: 25px; */
+  margin-right: 25px;
 }
 
 img.photo-size {
@@ -105,9 +102,9 @@ img.photo-size {
   top: 954px;
   color: #333333;
 }
-/* p.normal-text {
-  width: 570px;
-  height: 455px;
+p.normal-text {
+  /* width: 570px; */
+  /* height: 455px; */
   left: 750px;
   top: 1016px;
   font-family: Poppins;
@@ -116,29 +113,39 @@ img.photo-size {
   font-size: 16px;
   line-height: 35px;
   color: #333333;
-} */
+}
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 400px) and (max-width: 550px) {
   .court-house {
     position: absolute;
     width: 200px;
-    height: 170px;
-    left: -25px;
+    height: 120px;
+    left: 10px;
     top: 150px;
     z-index: 2;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 759px) {
+@media screen and (min-width: 551px) and (max-width: 799px) {
   .court-house {
     position: absolute;
     width: 200px;
-    height: 170px;
-    left: 65px;
+    height: 120px;
+    left: 120px;
     top: 150px;
     z-index: 2;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 800px) and (max-width: 990px) {
+  .court-house {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    left: 200px;
+    top: 150px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
   /* Jumbotron 
    ============================= */
   .jumbotron {
