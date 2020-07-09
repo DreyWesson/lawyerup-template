@@ -159,16 +159,18 @@ p.normal-text {
 .second-jumbo a {
   color: #ffffff;
 }
+
 .second-jumbo .jumbotron {
   color: white;
   height: 350px;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  background-image: url("https://www.stx.ox.ac.uk/sites/default/files/styles/listing_landscape_image/public/stx/images/page/inaki-del-olmo-nijueqw0rkg-unsplash.jpg?itok=Eggj76a_");
-  background-size: cover;
-  background-position: 30px center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.stx.ox.ac.uk/sites/default/files/styles/listing_landscape_image/public/stx/images/page/inaki-del-olmo-nijueqw0rkg-unsplash.jpg?itok=Eggj76a_");
   object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Responsiveness
