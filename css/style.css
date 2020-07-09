@@ -170,7 +170,31 @@ p.normal-text {
   background-position: 30px center;
   object-fit: cover;
 }
+.second-jumbo {
+  margin-bottom: 80px;
+}
 
+.vector {
+  width: 89px;
+  margin: 0 auto;
+  border: 2px solid #f2c64d;
+}
+.practice h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+}
+.practice p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  width: 60ch;
+  margin: 0 auto;
+}
 /* Responsiveness
    ============================= */
 @media screen and (min-width: 400px) and (max-width: 550px) {
