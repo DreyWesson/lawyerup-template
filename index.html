@@ -34,6 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Lawyer Up</title>
   </head>
@@ -319,55 +320,68 @@
       </div>
     </section>
 
-    <section class="my-5">
-      <div class="container">
+    <section class="my-5 d-flex">
+      <div class="container d-flex">
+        <!-- Card 1 -->
         <div class="row">
-          <!-- Card 1 -->
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3 ">
-            <div class="card card1">
-               <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
-                <i class="fas fa-briefcase"></i>
-                <h4 class="card-title">Business Law</h4>
-                <p class="card-text">We offer different variations of the law, no matter what your case is we are here for you with vast and experienced attorneys</p>
-              </div>
+          <div class="testify-container ">
+            <div class="testify-img">
+              <div class="smilingman"></div>
+            </div>
+            <div class="testify-content">
+              <p class="testify-text">
+                Very good service withe great attorney’s not too 
+pocket friendly but the service is totally worth the fee
+              </p>
+              <p class="testify-head">Jim Rosewood</p>
             </div>
           </div>
-          <!-- Card 2 -->
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3 ">
-            <div class="card card1">
-               <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
-                <i class="fas fa-landmark"></i>
-                <h4 class="card-title">Finance law</h4>
-                <p class="card-text">We offer different variations of the law, no matter what your case is we are here for you with vast and experienced attorneys</p>
-              </div>
+
+          <div class="testify-container">
+            <div class="testify-img">
+              <div class="smilingman"></div>
+            </div>
+            <div class="testify-content">
+              <p class="testify-text">
+                Very good service withe great attorney’s not too pocket friendly but the service is totally worth the fee
+              </p>
+              <p class="testify-head">Jim Rosewood</p>
             </div>
           </div>
-          <!-- Card 3 -->
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3 ">
-            <div class="card card1">
-               <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
-                <i class="fas fa-users"></i>
-                <h4 class="card-title">Family Law</h4>
-                <p class="card-text">We offer different variations of the law, no matter what your case is we are here for you with vast and experienced attorneys</p>
-              </div>
+
+          <div class="testify-container">
+            <div class="testify-img">
+              <div class="smilingman"></div>
+            </div>
+            <div class="testify-content">
+              <p class="testify-text">
+                Very good service withe great attorney’s not too 
+                pocket friendly but the service is totally worth the fee
+              </p>
+              <p class="testify-head py-0">Jim Rosewood</p>
+              <p style="margin-top: 0px;">Client</p>
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3 ">
-            <div class="card card1">
-               <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
-                <i class="fas fa-graduation-cap"></i>
-                <h4 class="card-title">Education Law</h4>
-                <p class="card-text">We offer different variations of the law, no matter what your case is we are here for you with vast and experienced attorneys</p>
-              </div>
+          <div class="testify-container">
+            <div class="testify-img">
+              <div class="smilingman"></div>
+            </div>
+            <div class="testify-content">
+              <p class="testify-text">
+                Very good service withe great attorney’s not too 
+                pocket friendly but the service is totally worth the fee
+              </p>
+              <p class="testify-head py-0">Jim Rosewood</p>
+              <p style="margin-top: 0px;">Client</p>
             </div>
           </div>
-          <!-- Card end -->
         </div>
       </div>
     </section>
     <!-- Testimonials end -->
 
+    
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -384,6 +398,28 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script>
+
+      $('#carouselExampleControls').on('slide.bs.carousel', function (e) {
+          var $e = $(e.relatedTarget);
+          var idx = $e.index();
+          var itemsPerSlide = 3;
+          var totalItems = $('.carousel-item').length;
+        console.log(totalItems);
+          if (idx >= totalItems-(itemsPerSlide-1)) {
+              var it = itemsPerSlide - (totalItems - idx);
+              for (var i=0; i<it; i++) {
+                  // append slides to end
+                  if (e.direction=="left") {
+                      $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                  }
+                  else {
+                      $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                  }
+              }
+          }
+      });
+    </script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
