@@ -186,6 +186,11 @@ p.normal-text {
   margin: 0 auto;
   border: 2px solid #f2c64d;
 }
+.vector3 {
+  width: 69px;
+  margin: 0 auto;
+  border: 2px solid #f2c64d;
+}
 
 /* Practice Area 
    ============================= */
@@ -206,6 +211,8 @@ p.normal-text {
   margin: 0 auto;
 }
 
+/* Practice Area 
+   ============================= */
 .card1 {
   max-width: 100%;
   height: 374px;
@@ -215,7 +222,7 @@ p.normal-text {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("/images/card1b.jpeg");
 }
-.card1 i {
+i {
   color: #f2c64d;
   margin-bottom: 30px;
 }
@@ -230,6 +237,51 @@ p.normal-text {
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
+}
+/* Our attorneys 
+   ============================= */
+.card-sec-2 {
+  max-width: 100%;
+  height: 374px;
+  max-height: 374px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: auto;
+  /* max-height: 100%; */
+  background-image: url("/images/attorney1.jpeg");
+}
+.attorneys {
+  background-color: #2c2f3a;
+  color: #ffffff;
+}
+.attorneys h3 {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #fffdf8;
+}
+.attorneys p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fffdf8;
+}
+.attorneys h4 {
+  font-size: 16px;
+  line-height: 27px;
+  color: #fffdf8;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.attorneys p.tail {
+  font-size: 14px;
+  line-height: 24px;
+  color: #f2c64d;
+  margin-bottom: 2px;
+  text-align: left;
 }
 /* Responsiveness
    ============================= */
@@ -326,7 +378,7 @@ p.normal-text {
     margin: auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 991px) {
   /* Jumbotron 
    ============================= */
   .jumbotron {
