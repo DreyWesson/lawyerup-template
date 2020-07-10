@@ -260,7 +260,7 @@ i {
   background-image: url("/images/attorney1.jpeg");
 }
 #attorneys {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   padding-top: 30px;
 }
 .attorneys {
@@ -294,6 +294,8 @@ i {
   margin-bottom: 2px;
   text-align: left;
 }
+/* Testimonials 
+   ============================= */
 /* Responsiveness
    ============================= */
 @media screen and (min-width: 400px) and (max-width: 550px) {
