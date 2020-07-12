@@ -20,6 +20,11 @@ a.navbar-brand {
 .navbar-dark .navbar-nav .show > .nav-link {
   color: #333333;
 }
+#wellcome a {
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.4em;
+}
 li a {
   font-family: "Poppins", sans-serif;
 }
