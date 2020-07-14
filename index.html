@@ -59,25 +59,28 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+            <!-- To center the ul -->
+            <!-- <ul class="navbar-nav mx-auto" ></ul> -->
+            <ul class="navbar-nav ml-auto" >
+
+              <li class="nav-item active mx-3">
                 <a class="nav-link" href="#"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="#practice">Practice Area</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="#attorneys">Attorneys</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
@@ -200,7 +203,7 @@
 
     <!-- Pratice Area -->
     <div class="vector2 my2"></div>
-    <section class="text-center practice my-3">
+    <section class="text-center practice my-3" id="practice">
       <div class="text-center">
         <h3>Practice Area</h3>
         <p class="lead">We offer different variations of the law, no matter what your case is we are 
@@ -552,6 +555,28 @@ pocket friendly but the service is totally worth the fee
           }
       });
     </script>
+        <script>
+          const ul = document.querySelector(".navbar-nav");
+          if (ul) {
+            const navItems = [...ul.getElementsByTagName("li")];
+            navItems.forEach((li) => {
+              li.addEventListener("click", function () {
+                if (!this.classList.contains("active")) {
+                  clearActives(navItems);
+                  this.classList.toggle("active");
+                }
+              });
+            });
+          }
+    
+          function clearActives(classlist) {
+            if (classlist) {
+              classlist.forEach((classLi, i) => {
+                classLi.classList.remove("active");
+              });
+            }
+          }
+        </script>
     <!-- <script src="script.js"></script> -->
   </body>
 </html>
