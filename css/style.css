@@ -388,11 +388,16 @@ footer h2 {
 }
 .footer-top {
   background: #2c2f3a;
-  padding: 80px 0;
+  padding: 15px 0;
 }
 .segment-one {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 10px 0;
+}
+.segment-one h2 {
+  font-family: Cochin;
+  color: #fff;
+  text-transform: uppercase;
 }
 .segment-two h2:before {
   content: " | ";
@@ -406,7 +411,7 @@ footer h2 {
 }
 .segment-two ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  line-height: 40px;
+  line-height: 30px;
 }
 .segment-two ul li a {
   color: #fff;
@@ -445,19 +450,17 @@ footer h2 {
   color: #ffc107;
   padding-right: 10px;
 }
-.segment-four form input[type="submit"] {
+#basic-addon2 {
   background: #ffc107;
-  border: none;
-  padding: 3px 15px;
-  margin-left: -5px;
   color: #2c2f3a;
+  border: 1px solid #ffc107;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .footer-bottom-text {
   text-align: center;
-  background: #000;
+  background: #2c2f3a;
   line-height: 75px;
+  margin-bottom: 0;
 }
 /* Responsiveness
    ============================= */
