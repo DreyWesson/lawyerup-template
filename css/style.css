@@ -423,15 +423,17 @@ footer h2 {
 }
 .segment-three a {
   background: #f2c64d;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: inline-block;
-  border-radius: 40px;
+  border-radius: 50%;
+  margin-right: 7px;
 }
 .segment-three a i {
   font-size: 20px;
   color: #2c2f3a;
-  padding: 10px 12px;
+  font-weight: bold;
+  padding: 8px 8px;
   object-fit: cover;
 }
 .segment-four h2 {
@@ -448,12 +450,18 @@ footer h2 {
   border: none;
   padding: 3px 15px;
   margin-left: -5px;
-  color: #fff;
+  color: #2c2f3a;
+  font-weight: bold;
   text-transform: uppercase;
 }
-
+.footer-bottom-text {
+  text-align: center;
+  background: #000;
+  line-height: 75px;
+}
 /* Responsiveness
    ============================= */
+
 @media screen and (min-width: 400px) and (max-width: 550px) {
   .court-house {
     position: absolute;
@@ -485,7 +493,7 @@ footer h2 {
     margin: auto;
   }
 }
-@media screen and (min-width: 551px) and (max-width: 799px) {
+@media screen and (min-width: 551px) and (max-width: 768px) {
   .court-house {
     position: absolute;
     width: 200px;
@@ -516,7 +524,7 @@ footer h2 {
     margin: auto;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
   .court-house {
     position: absolute;
     width: 200px;
@@ -545,6 +553,9 @@ footer h2 {
     color: #ffffff;
     max-width: 75ch;
     margin: auto;
+  }
+  .md-mb-30 {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 991px) {
