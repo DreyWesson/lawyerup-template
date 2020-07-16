@@ -5,6 +5,7 @@ body {
    ============================= */
 nav {
   background-color: white;
+  /* padding-top: 70px; */
 }
 a.navbar-brand {
   /* font-family: "Merienda One", cursive; */
@@ -376,7 +377,7 @@ i {
    ============================= */
 footer p {
   color: #fff;
-  line-height: 25px;
+  line-height: 30px;
 }
 footer h2,
 footer h3 {
@@ -395,9 +396,31 @@ footer h2 {
   margin: 10px 0;
 }
 .segment-one h2 {
+  font-size: 30px;
+  color: #f2c64d;
+}
+.segment-one p {
+  line-height: 40px;
+}
+.segment-one h2 {
   font-family: Cochin;
   color: #fff;
   text-transform: uppercase;
+}
+.segment-one a {
+  background: #f2c64d;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.segment-one a i {
+  font-size: 20px;
+  color: #2c2f3a;
+  font-weight: bold;
+  padding: 8px 8px;
+  object-fit: cover;
 }
 .segment-two h2:before {
   content: " | ";
@@ -417,30 +440,19 @@ footer h2 {
   color: #fff;
   text-decoration: none;
 }
-.segment-three h2 {
+.media {
   color: #fff;
-  text-transform: uppercase;
+}
+.media i {
+  color: #fff;
+  font-size: 25px;
 }
 .segment-three h2:before {
   content: " | ";
   color: #ffc107;
   padding-right: 10px;
 }
-.segment-three a {
-  background: #f2c64d;
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 7px;
-}
-.segment-three a i {
-  font-size: 20px;
-  color: #2c2f3a;
-  font-weight: bold;
-  padding: 8px 8px;
-  object-fit: cover;
-}
+
 .segment-four h2 {
   color: #fff;
   text-decoration: uppercase;
@@ -455,6 +467,11 @@ footer h2 {
   color: #2c2f3a;
   border: 1px solid #ffc107;
   font-weight: bold;
+}
+hr {
+  height: 0.5px;
+  background-color: #ccc;
+  border: none;
 }
 .footer-bottom-text {
   text-align: center;
