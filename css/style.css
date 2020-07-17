@@ -305,15 +305,15 @@ i {
 .testify-img {
   width: 200px;
   height: 200px;
-  margin-left: 90px;
-  margin-bottom: -110px;
+  margin-left: 100px;
+  margin-bottom: -140px;
 }
 
 .smilingman {
   position: absolute;
-  width: 160px;
-  height: 160px;
-  border-radius: 100px;
+  width: 130px;
+  height: 130px;
+  border-radius: 130px;
   padding-bottom: 0px;
   margin-top: 0px;
   background-image: url("https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
