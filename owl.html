@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/fontawesome/css/all.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/OwlCarousel/dist/assets/owl.carousel.css" /> -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <style>
+      img {
+        /* max-width: 368px; */
+        max-height: 368px;
+        object-fit: contain;
+      }
+      .testimonial-area {
+        padding: 180px 0;
+        position: relative;
+        background-image: url("/images/kitchen.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .testimonial-area:before {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .single-testimonial {
+        color: #ffffff;
+        padding: 75px;
+        position: relative;
+        margin: 0 15px 15px;
+      }
+      .img-area {
+        border-radius: 50%;
+        height: 150px;
+        left: 0;
+        margin-top: -75px;
+        position: absolute;
+        top: 50%;
+        width: 150px;
+      }
+      .testi-text {
+        background: #ffff4a;
+        padding: 40px 20px 40px 100px;
+        color: #262626;
+      }
+      .img-area > img {
+        background: linear-gradient(to bottom, darkcyan, white);
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 5px;
+      }
+      .testi-text h4 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-family: shrikhand;
+      }
+      .testi-text h4 span {
+        font-size: 14px;
+        display: block;
+      }
+      .testi-text p {
+        line-height: 25px;
+        font-size: 18px;
+        font-family: Courgette;
+      }
+      .single-testimonial:hover .testi-text {
+        background: #fff;
+        transition: 0.9s;
+      }
+      .testimonial-area div.owl-nav {
+        color: #ffff4a;
+        display: inline-block;
+        font-size: 55px;
+        height: 60px;
+        margin-top: -30px;
+        text-align: center;
+        width: 40px;
+        transition: 0.3s;
+      }
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+      }
+      .owl-prev {
+        left: -20px;
+        top: 200px;
+      }
+      .owl-next {
+        right: -20px;
+        top: 200px;
+        margin-right: 10px;
+      }
+
+      /* Responsiveness
+      =========================== */
+      @media only screen and (max-width: 767px) {
+        .testimonial-area {
+          padding: 150px 0;
+        }
+        .single-testimonial {
+          padding-left: 0;
+          padding-top: 75px;
+        }
+        .img-area {
+          left: 50%;
+          margin-left: -75px;
+          top: 75px;
+        }
+        .testi-text {
+          padding: 80px 25px 25px;
+        }
+        .testi-text h4 {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        .testi-text p {
+          font-size: 16px;
+        }
+        .owl-prev {
+          left: -15px;
+          top: 150px;
+        }
+        .owl-next {
+          right: -15px;
+          top: 150px;
+        }
+      }
+    </style>
+
+    <title>Lawyer Up</title>
+  </head>
+  <body>
+    <div class="testimonial-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel test-slides" id="testimonial-carousel">
+              <!-- Item 1 -->
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="img-area">
+                    <img src="/images/attorney1.jpeg" alt="" />
+                  </div>
+                  <div class="testi-text">
+                    <h4>Erika Johnson <span>Web designer</span></h4>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolore blanditiis ex accusantium repellendus eveniet.
+                      Labore, illum magni placeat, pariatur nisi blanditiis
+                      possimus vel quod officia odit illo, aperiam dolore
+                      temporibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="img-area">
+                    <img src="/images/glasses.jpeg" alt="" />
+                  </div>
+                  <div class="testi-text">
+                    <h4>David Wood <span>Graphics designer</span></h4>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolore blanditiis ex accusantium repellendus eveniet.
+                      Labore, illum magni placeat, pariatur nisi blanditiis
+                      possimus vel quod officia odit illo, aperiam dolore
+                      temporibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="img-area">
+                    <img src="/images/attorney1.jpeg" alt="" />
+                  </div>
+                  <div class="testi-text">
+                    <h4>Laura Thorn <span>Devops</span></h4>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolore blanditiis ex accusantium repellendus eveniet.
+                      Labore, illum magni placeat, pariatur nisi blanditiis
+                      possimus vel quod officia odit illo, aperiam dolore
+                      temporibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/jquery/jquery-3.5.1.min.js"></script>
+    <script src="/popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script>
+      $("#testimonial-carousel").owlCarousel({
+        // autoplay: true,
+        dots: false,
+        margin: 10,
+        loop: true,
+        nav: true,
+        navText: [
+          '<i class="fa fa-angle-left"></i>',
+          '<i class="fa fa-angle-right"></i>',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
