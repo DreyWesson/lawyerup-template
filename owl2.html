@@ -31,34 +31,66 @@
       }
       .img-fluid {
         max-width: 100%;
-        height: 100%;
+        max-height: 145px;
         display: block;
+        object-fit: cover;
       }
       .owl-carousel .owl-stage {
         margin-bottom: 0px;
       }
+      .owl-nav .owl-prev {
+        position: absolute;
+        top: 80px;
+        left: -30px;
+        font-size: 40px;
+      }
+      .owl-nav .owl-next {
+        position: absolute;
+        top: 80px;
+        right: -30px;
+        font-size: 20px;
+      }
+
+      .owl-nav .owl-next .fa-angle-right,
+      .owl-nav .owl-prev .fa-angle-left {
+        font-size: 20px;
+        color: blue;
+      }
+      .owl-theme .owl-dots .owl-dot span {
+        background-color: blue;
+        opacity: 0.5;
+      }
+      .owl-theme .owl-dots .owl-dot.active span {
+        background-color: blue;
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding: 0 50px; margin: 0;">
       <div class="owl-carousel owl-theme">
         <div class="item">
           <img src="/images/glasses.jpeg" alt="glasses" class="img-fluid" />
         </div>
         <div class="item">
-          <img src="/images/glasses.jpeg" alt="glasses" class="img-fluid" />
+          <img src="/images/kitchen.jpeg" alt="glasses" class="img-fluid" />
         </div>
         <div class="item">
-          <img src="/images/glasses.jpeg" alt="glasses" class="img-fluid" />
+          <img src="/images/attorney2.jpg" alt="glasses" class="img-fluid" />
         </div>
         <div class="item">
-          <img src="/images/glasses.jpeg" alt="glasses" class="img-fluid" />
+          <img src="/images/attorney2.jpg" alt="glasses" class="img-fluid" />
         </div>
         <div class="item">
-          <img src="/images/glasses.jpeg" alt="glasses" class="img-fluid" />
+          <img src="/images/attorney1.jpeg" alt="glasses" class="img-fluid" />
         </div>
         <div class="item">
-          <img src="/images/glasses.jpeg" alt="glasses" class="img-fluid" />
+          <img
+            src="/images/card1b.jpeg"
+            alt="glasses"
+            class="img-fluid"
+            style="object-fit: 20px; width: 50%; height: 25%;"
+          />
         </div>
         <div class="item">
           <img src="/images/glasses.jpeg" alt="glasses" class="img-fluid" />
@@ -106,7 +138,7 @@
             items: 3,
           },
           1000: {
-            items: 5,
+            items: 4,
           },
         },
       });
