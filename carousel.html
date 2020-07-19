@@ -24,7 +24,7 @@
     <style>
       body {
         margin: 30px;
-        padding: 30px;
+        /* padding: 30px; */
       }
       .carousel-indicators li {
         color: blue;
@@ -37,15 +37,18 @@
         position: absolute;
         top: 150px;
         z-index: 4;
-        left: -40px;
-        font-size: 30px;
+        left: -15px;
+        font-size: 15px;
       }
       .controls-top i.fa-chevron-right {
         position: absolute;
         top: 150px;
         z-index: 4;
-        right: -40px;
-        font-size: 30px;
+        right: -15px;
+        font-size: 15px;
+      }
+      .disappear {
+        display: none;
       }
       @media (max-width: 768px) {
         .carousel-inner .carousel-item > div {
@@ -53,6 +56,9 @@
         }
         .carousel-inner .carousel-item > div:first-child {
           display: block;
+        }
+        .disappear {
+          display: none;
         }
       }
 
@@ -72,6 +78,9 @@
         .carousel-inner .carousel-item-left.active,
         .carousel-inner .carousel-item-prev {
           transform: translateX(-33.333%);
+        }
+        .disappear {
+          display: inline-block;
         }
       }
 
@@ -110,9 +119,21 @@
         ></li>
         <li data-target="#multi-item-example" data-slide-to="1"></li>
         <li data-target="#multi-item-example" data-slide-to="2"></li>
-        <li data-target="#multi-item-example" data-slide-to="3"></li>
-        <li data-target="#multi-item-example" data-slide-to="4"></li>
-        <li data-target="#multi-item-example" data-slide-to="5"></li>
+        <li
+          class="disappear"
+          data-target="#multi-item-example"
+          data-slide-to="3"
+        ></li>
+        <li
+          class="disappear"
+          data-target="#multi-item-example"
+          data-slide-to="4"
+        ></li>
+        <li
+          class="disappear"
+          data-target="#multi-item-example"
+          data-slide-to="5"
+        ></li>
       </ol>
       <!--/.Indicators-->
 
