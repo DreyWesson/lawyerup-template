@@ -48,7 +48,7 @@
         font-size: 15px;
       }
       .disappear {
-        display: none;
+        display: inline-block;
       }
       @media (max-width: 768px) {
         .carousel-inner .carousel-item > div {
@@ -57,9 +57,9 @@
         .carousel-inner .carousel-item > div:first-child {
           display: block;
         }
-        .disappear {
+        /* .disappear {
           display: none;
-        }
+        } */
       }
 
       .carousel-inner .carousel-item.active,
@@ -80,7 +80,7 @@
           transform: translateX(-33.333%);
         }
         .disappear {
-          display: inline-block;
+          display: none;
         }
       }
 
