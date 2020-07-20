@@ -207,6 +207,41 @@ p.normal-text {
   border: 2px solid #f2c64d;
 }
 
+/* Owl Carousel 
+   ============================= */
+.owl-theme .owl-nav {
+  padding: 0;
+  margin: 0;
+}
+.owl-carousel .owl-stage {
+  margin-bottom: 0px;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: 160px;
+  left: -20px;
+  font-size: 40px;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: 160px;
+  right: -25px;
+  font-size: 20px;
+}
+
+.owl-nav .owl-next .fa-angle-right,
+.owl-nav .owl-prev .fa-angle-left {
+  font-size: 20px;
+  color: white;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: white;
+  opacity: 0.5;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: white;
+  opacity: 1;
+}
 /* Practice Area 
    ============================= */
 .practice h3 {
@@ -261,16 +296,13 @@ i {
   max-height: 374px;
   object-fit: cover;
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
   width: 100%;
-  margin: auto;
+  margin: auto 10px;
   /* max-height: 100%; */
   background-image: url("/images/attorney1.jpeg");
 }
-#attorneys {
-  margin-bottom: 40px;
-  padding-top: 30px;
-}
+
 .attorneys {
   background-color: #2c2f3a;
   color: #ffffff;

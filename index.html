@@ -19,7 +19,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     /> -->
     <link rel="stylesheet" href="/fontawesome/css/all.css">
-
+    <!-- <link rel="stylesheet" href="/OwlCarousel/dist/assets/owl.carousel.css" /> -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="/css/owl.theme.default.css" /> -->
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+   
 
     <!-- Bootstrap CSS -->
     <!-- <link
@@ -262,57 +266,64 @@
     <!-- Practice Area end -->
 
      <!-- Our Attorneys -->
-    <!-- <div id="attorneys" style="background-color: #333333; padding: 35px;"></div> -->
-     <section id="attorneys"  class="attorneys" style="padding: 100px;">
+    <section id="attorneys"  class="attorneys" style="padding: 100px 5px;">
       <div class="vector3"></div>
-        <div class="text-center practice my-3">
-          <div class="text-center">
-            <h3>Meet Our Attorneys</h3>
-            <p class="lead">We offer different variations of the law, no matter what your case is we are 
-              here for you with vast and experienced attorneys</p>
-          </div>
+      <div class="text-center practice my-3">
+        <div class="text-center">
+          <h3>Meet Our Attorneys</h3>
+          <p class="lead">We offer different variations of the law, no matter what your case is we are 
+            here for you with vast and experienced attorneys</p>
+        </div>
       </div>
  
-       <div class="container">
-         <div class="row">
-           <!-- Card 1 -->
-           <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3 ">
-             <div class="card card-sec-2"></div>
-             <h4 class="display-5" >Gbenga Phillip</h4>
-             <p class="tail">Criminal Lawyer</p>
-              <i class="fab fa-instagram" style="margin-right: 10px;"></i>
-              <i class="fab fa-twitter-square" style="margin-right: 10px;"></i>
-              <i class="fab fa-facebook" style="margin-right: 10px;"></i>
-           </div>
-           <!-- Card 2 -->
-           <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3 ">
+      <div class="container">
+      <div class="owl-carousel owl-theme">
+          <!-- Card 1 -->
+          <div class="item">
             <div class="card card-sec-2"></div>
+              <div class="container ">
+                <h4 class="display-5" >Gbenga Phillip</h4>
+                <p class="tail">Criminal Lawyer</p>
+                <i class="fab fa-instagram" style="margin-right: 10px;"></i>
+                <i class="fab fa-twitter-square" style="margin-right: 10px;"></i>
+                <i class="fab fa-facebook" style="margin-right: 10px;"></i>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="item">
+            <div class="card card-sec-2"></div>
+            <div class="container">
               <h4 class="display-5" >Tega Matthew</h4>
               <p class="tail">Family Lawyer</p>
               <i class="fab fa-instagram" style="margin-right: 10px;"></i>
               <i class="fab fa-twitter-square" style="margin-right: 10px;"></i>
-              <i class="fab fa-facebook" style="margin-right: 10px;"></i>
+              <i class="fab fa-facebook" style="margin-right: 10px;"></i> 
+            </div>
           </div>
-           <!-- Card 3 -->
-           <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3 ">
-              <div class="card card-sec-2"></div>
+          <!-- Card 3 -->
+          <div class="item">
+            <div class="card card-sec-2"></div>
+            <div class="container">
               <h4 class="display-5" >Isaac Tope</h4>
               <p class="tail">Education Lawyer</p>
               <i class="fab fa-instagram" style="margin-right: 10px;"></i>
               <i class="fab fa-twitter-square" style="margin-right: 10px;"></i>
               <i class="fab fa-facebook" style="margin-right: 10px;"></i>
+            </div>
           </div>
-           <!-- Card 4 -->
-           <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3 ">
-              <div class="card card-sec-2"></div>
+          <!-- Card 4 -->
+          <div class="item">
+            <div class="card card-sec-2"></div>
+            <div class="container">
               <h4 class="display-5" >Greg John</h4>
               <p class="tail">Finance Lawyer</p>
               <i class="fab fa-instagram" style="margin-right: 10px;"></i>
               <i class="fab fa-twitter-square" style="margin-right: 10px;"></i>
-              <i class="fab fa-facebook" style="margin-right: 10px;"></i>
+              <i class="fab fa-facebook" style="margin-right: 10px;"></i> 
+            </div>
           </div>
            <!-- Card end -->
-         </div>
+        </div>
        </div>
      </section>
 
@@ -485,8 +496,34 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script> -->
+        <!-- <script src="/js/owl.carousel.min.js"></script> -->
+        <script src="/js/owl.carousel.js"></script>
+        <script>
+          $(".owl-carousel").owlCarousel({
+            // autoplay: true,
+            // dots: false,
+            margin: 10,
+            loop: true,
+            nav: true,
+            dots: true,
+            navText: [
+              '<i class="fa fa-angle-left"></i>',
+              '<i class="fa fa-angle-right"></i>',
+            ],
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 2,
+              },
+              1000: {
+                items: 4,
+              },
+            },
+          });
+        </script>
     <script>
-
       $('#carouselExampleControls').on('slide.bs.carousel', function (e) {
           var $e = $(e.relatedTarget);
           var idx = $e.index();
