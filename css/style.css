@@ -232,14 +232,14 @@ p.normal-text {
 .owl-nav .owl-next .fa-angle-right,
 .owl-nav .owl-prev .fa-angle-left {
   font-size: 20px;
-  color: white;
+  color: #fcba07;
 }
 .owl-theme .owl-dots .owl-dot span {
-  background-color: white;
+  background-color: #fcba07;
   opacity: 0.5;
 }
 .owl-theme .owl-dots .owl-dot.active span {
-  background-color: white;
+  background-color: #fcba07;
   opacity: 1;
 }
 /* Practice Area 
