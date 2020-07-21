@@ -266,11 +266,38 @@ p.normal-text {
 .card1 {
   max-width: 100%;
   height: 374px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/images/card1b.jpeg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
+}
+.card2 {
+  max-width: 100%;
+  height: 374px;
+  object-fit: cover;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("/images/card1b.jpeg");
+    url("/images/attorney2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.card3 {
+  max-width: 100%;
+  height: 374px;
+  object-fit: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("/images/lawyerup12.png");
+  background-size: cover;
+  background-position: center center;
+}
+.card4 {
+  max-width: 100%;
+  height: 374px;
+  object-fit: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/images/lawyerup11.png");
+  background-size: cover;
+  background-position: center center;
 }
 i {
   color: #f2c64d;
@@ -290,17 +317,53 @@ i {
 }
 /* Our attorneys 
    ============================= */
-.card-sec-2 {
+.card-sec-1 {
   max-width: 100%;
   height: 374px;
   max-height: 374px;
+  background-image: url("/images/harvey2.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
   width: 100%;
   margin: auto 10px;
   /* max-height: 100%; */
-  background-image: url("/images/attorney1.jpeg");
+}
+.card-sec-2 {
+  max-width: 100%;
+  height: 374px;
+  max-height: 374px;
+  background-image: url("/images/jessica2.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center -5px;
+  width: 100%;
+  margin: auto 10px;
+  /* max-height: 100%; */
+}
+.card-sec-3 {
+  max-width: 100%;
+  height: 374px;
+  max-height: 374px;
+  background-image: url("/images/lawyerssss.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: -85px center;
+  width: 100%;
+  margin: auto 10px;
+  /* max-height: 100%; */
+}
+.card-sec-4 {
+  max-width: 100%;
+  height: 374px;
+  max-height: 374px;
+  background-image: url("/images/lawyer5.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: auto 10px;
+  /* max-height: 100%; */
 }
 
 .attorneys {
