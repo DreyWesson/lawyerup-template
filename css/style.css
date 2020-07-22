@@ -405,10 +405,11 @@ i {
 /* Testimonials 
    ============================= */
 .testify-img {
-  width: 200px;
-  height: 200px;
-  margin-left: 70px;
-  margin-bottom: -140px;
+  /* width: 70px; */
+  height: 70px;
+  /* margin-left: 70px;
+  margin-bottom: -140px; */
+  transform: translate(30%, 20%);
 }
 
 .smilingman {
