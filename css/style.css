@@ -477,6 +477,11 @@ i {
 .contact-address {
   padding: 30px 0px;
   margin: 20px 0;
+  background: #2c2f3a;
+}
+.contact-address pre {
+  border-bottom: 0.2px solid #2c2f3a;
+  padding-bottom: 20px;
 }
 
 /* Contact Us
