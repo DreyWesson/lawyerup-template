@@ -206,6 +206,11 @@ p.normal-text {
   margin: 0 auto;
   border: 2px solid #f2c64d;
 }
+.vector4 {
+  width: 49px;
+  /* margin: 0 auto; */
+  border: 1px solid #f2c64d;
+}
 
 /* Owl Carousel 
    ============================= */
@@ -458,17 +463,20 @@ i {
    ============================= */
 .contact {
   background-image: url("/images/contact-img.png");
-  color: white;
-  min-height: 500px;
-  /* height: 500px; */
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
+
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.stx.ox.ac.uk/sites/default/files/styles/listing_landscape_image/public/stx/images/page/inaki-del-olmo-nijueqw0rkg-unsplash.jpg?itok=Eggj76a_"); */
   object-fit: cover;
   background-size: cover;
   background-position: center;
+}
+.contact-mail {
+  padding: 30px 10px;
+  margin: 50px 0;
+}
+.contact-address {
+  padding: 30px 0px;
+  margin: 20px 0;
 }
 
 /* Contact Us
@@ -722,5 +730,9 @@ hr {
     color: #ffffff;
     max-width: 75ch;
     margin: auto;
+  }
+  .contact-mail {
+    padding: 50px 50px 50px 50px;
+    margin-right: 6em;
   }
 }
