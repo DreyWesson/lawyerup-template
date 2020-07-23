@@ -421,6 +421,18 @@ i {
   background-position: center right;
   background-clip: padding-box;
 }
+.smilingman.card2 {
+  background-image: url("https://source.unsplash.com/600x400/?avatar,face");
+  background-position: center center;
+}
+.smilingman.card3 {
+  background-image: url("https://source.unsplash.com/600x400/?random,person");
+  background-position: center center;
+}
+.smilingman.card4 {
+  background-image: url("https://source.unsplash.com/600x400/?random,profile");
+  background-position: center center;
+}
 
 .testify-head {
   font-family: Poppins;
