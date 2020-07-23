@@ -593,7 +593,7 @@ hr {
   .jumbotron {
     color: white;
     /* height: 350px; */
-    height: 75vh;
+    height: 70vh;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
