@@ -40,7 +40,7 @@ li a {
   overflow: hidden;
   background-image: url("/images/lawyer-up.jpeg");
   background-size: cover;
-  background-position: 30px center;
+  background-position: -0% center;
 }
 #jumboBtn {
   height: 100vh;
@@ -79,25 +79,12 @@ li a {
   margin-right: 25px;
   margin-top: 60px;
 }
-
-img.photo-size {
-  width: 290px;
-  min-width: 200px;
-  max-width: 417px;
+#about .justice-img {
+  transform: translate(-74%, 60%);
+  z-index: 2;
 }
-.justice-photo {
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  position: relative;
-  padding-left: 0;
-}
-.court-house {
-  position: absolute;
-  width: 200px;
-  height: 170px;
-  left: -85px;
-  top: 150px;
+#about .justice-img-container {
+  height: 0px;
 }
 .heading-text {
   font-family: Roboto;
@@ -602,16 +589,24 @@ hr {
 }
 /* Responsiveness
    ============================= */
-
-@media screen and (min-width: 400px) and (max-width: 550px) {
-  .court-house {
-    position: absolute;
-    width: 200px;
-    height: 120px;
-    left: 10px;
-    top: 150px;
+@media screen and (min-width: 574px) {
+  #about .justice-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    transform: translateX(50%);
     z-index: 2;
   }
+  #about .justice-img-container {
+    height: auto;
+  }
+  #about .court-img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 550px) {
   .second-jumbo h2 {
     font-family: Poppins;
     font-style: normal;
@@ -635,15 +630,7 @@ hr {
   }
 }
 @media screen and (min-width: 551px) and (max-width: 768px) {
-  .court-house {
-    position: absolute;
-    width: 200px;
-    height: 120px;
-    left: 120px;
-    top: 150px;
-    z-index: 2;
-  }
-  .second-jumbo h2 {
+  /* .second-jumbo h2 {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -663,18 +650,10 @@ hr {
     color: #ffffff;
     max-width: 75ch;
     margin: auto;
-  }
+  } */
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
-  .court-house {
-    position: absolute;
-    width: 200px;
-    height: 170px;
-    left: 200px;
-    top: 150px;
-    z-index: 2;
-  }
-  .second-jumbo h2 {
+  /* .second-jumbo h2 {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -694,7 +673,7 @@ hr {
     color: #ffffff;
     max-width: 75ch;
     margin: auto;
-  }
+  } */
   .md-mb-30 {
     margin-bottom: 30px;
   }
@@ -715,15 +694,6 @@ hr {
     font-weight: 600;
     font-size: 56px;
     line-height: 80px;
-  }
-
-  .court-house {
-    position: absolute;
-    width: 250px;
-    height: 230px;
-    left: 15px;
-    top: 150px;
-    z-index: 2;
   }
   .second-jumbo h2 {
     font-family: Poppins;
