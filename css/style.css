@@ -34,20 +34,23 @@ li a {
 .jumbotron {
   color: white;
   /* height: 350px; */
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
   background-image: url("/images/lawyer-up.jpeg");
   background-size: cover;
-  background-position: -0% center;
+  background-position: center left;
 }
 #jumboBtn {
   height: 100vh;
   margin-top: 1.5em;
 }
 .jumbotron h1 {
-  font-size: 3em;
+  font-size: 1.5em;
+}
+.jumbotron p.lead {
+  font-size: 1em;
 }
 .jumbo {
   padding-left: 0;
@@ -460,9 +463,6 @@ i {
    ============================= */
 .contact {
   background-image: url("/images/contact-img.png");
-
-  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://www.stx.ox.ac.uk/sites/default/files/styles/listing_landscape_image/public/stx/images/page/inaki-del-olmo-nijueqw0rkg-unsplash.jpg?itok=Eggj76a_"); */
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -590,6 +590,39 @@ hr {
 /* Responsiveness
    ============================= */
 @media screen and (min-width: 574px) {
+  .jumbotron {
+    color: white;
+    /* height: 350px; */
+    height: 75vh;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background-image: url("/images/lawyer-up.jpeg");
+    background-size: cover;
+    background-position: center left;
+  }
+  .second-jumbo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 81px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+  .second-jumbo p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    max-width: 75ch;
+    margin: auto;
+  }
+
   #about .justice-img {
     height: 300px;
     width: 100%;
@@ -604,117 +637,6 @@ hr {
     height: 600px;
     width: 100%;
     object-fit: cover;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 550px) {
-  .second-jumbo h2 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3em;
-    line-height: 81px;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-  }
-  .second-jumbo p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.1em;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-    max-width: 75ch;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 768px) {
-  /* .second-jumbo h2 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3em;
-    line-height: 81px;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-  }
-  .second-jumbo p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.1em;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-    max-width: 75ch;
-    margin: auto;
-  } */
-}
-@media screen and (min-width: 768px) and (max-width: 990px) {
-  /* .second-jumbo h2 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3em;
-    line-height: 81px;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-  }
-  .second-jumbo p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.1em;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-    max-width: 75ch;
-    margin: auto;
-  } */
-  .md-mb-30 {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 991px) {
-  /* Jumbotron 
-   ============================= */
-  .jumbotron {
-    height: 500px;
-    background-position: 230px center;
-  }
-  .jumbo h1 {
-    width: 565px;
-    height: 160px;
-    left: 120px;
-    top: 250px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 80px;
-  }
-  .second-jumbo h2 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3em;
-    line-height: 81px;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-  }
-  .second-jumbo p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.1em;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-    max-width: 75ch;
-    margin: auto;
   }
   .contact-mail {
     padding: 50px 50px 50px 50px;
