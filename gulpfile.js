@@ -25,7 +25,7 @@ const images = () => {
           { verbose: true }
         )
       )
-      .pipe(dest("dist"));
+      .pipe(dest("dist/images"));
   });
   return stream;
 };
