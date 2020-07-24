@@ -38,7 +38,7 @@ li a {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  background-image: url("/dist/lawyer-up-small.jpeg");
+  background-image: url("../dist/images/lawyer-up-small.jpeg");
   background-size: cover;
   background-position: center left;
 }
@@ -115,7 +115,7 @@ p.normal-text {
 .stats {
   color: #f4f4f4;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/dist/civic-hall-small.jpg");
+    url("/dist/images/civic-hall-small.jpg");
   font-family: Poppins;
   font-style: normal;
   font-size: 16px;
@@ -172,7 +172,7 @@ p.normal-text {
   max-width: 100%;
   overflow: hidden;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/dist/shelf-small.jpg");
+    url("/dist/images/shelf-small.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -262,7 +262,7 @@ p.normal-text {
   max-width: 100%;
   height: 374px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("/dist/card1b-small.jpeg");
+    url("/dist/images/card1b-small.jpeg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -272,7 +272,7 @@ p.normal-text {
   height: 374px;
   object-fit: cover;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("/dist/attorney2-small.jpg");
+    url("/dist/images/attorney2-small.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -281,7 +281,7 @@ p.normal-text {
   height: 374px;
   object-fit: cover;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url("/dist/lawyerup12-small.png");
+    url("/dist/images/lawyerup12-small.png");
   background-size: cover;
   background-position: center center;
 }
@@ -290,7 +290,7 @@ p.normal-text {
   height: 374px;
   object-fit: cover;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("/dist/lawyerup11-small.png");
+    url("/dist/images/lawyerup11-small.png");
   background-size: cover;
   background-position: center center;
 }
@@ -316,7 +316,7 @@ i {
   max-width: 100%;
   height: 374px;
   max-height: 374px;
-  background-image: url("/dist/harvey2-large.jpg");
+  background-image: url("/dist/images/harvey2-large.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -328,7 +328,7 @@ i {
   max-width: 100%;
   height: 374px;
   max-height: 374px;
-  background-image: url("/dist/jessica2-large.jpg");
+  background-image: url("/dist/images/jessica2-large.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center -5px;
@@ -340,7 +340,7 @@ i {
   max-width: 100%;
   height: 374px;
   max-height: 374px;
-  background-image: url("/dist/lawyerssss-large.jpg");
+  background-image: url("/dist/images/lawyerssss-large.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: -85px center;
@@ -352,7 +352,7 @@ i {
   max-width: 100%;
   height: 374px;
   max-height: 374px;
-  background-image: url("/dist/lawyer5-large.jpg");
+  background-image: url("/dist/images/lawyer5-large.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -406,7 +406,7 @@ i {
   border-radius: 110px;
   padding-bottom: 0px;
   margin-top: 0px;
-  background-image: url("/dist/lawyerup-small.jpeg");
+  background-image: url("/dist/images/lawyerup-small.jpeg");
   background-size: cover;
   background-position: center right;
   background-clip: padding-box;
@@ -462,7 +462,7 @@ i {
 /* Contact Us
    ============================= */
 .contact {
-  background-image: url("/dist/contact-img-medium.png");
+  background-image: url("/dist/images/contact-img-medium.png");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -592,18 +592,18 @@ hr {
 @media screen and (min-width: 574px) {
   .jumbotron {
     height: 70vh;
-    background-image: url("/dist/lawyer-up-large.jpeg");
+    background-image: url("/dist/images/lawyer-up-large.jpeg");
   }
   .stats {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("/dist/civic-hall-large.jpg");
+      url("/dist/images/civic-hall-large.jpg");
   }
   .second-jumbo .jumbotron {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/dist/shelf-large.jpg");
+      url("/dist/images/shelf-large.jpg");
   }
   .contact {
-    background-image: url("/dist/contact-img-large.png");
+    background-image: url("/dist/images/contact-img-large.png");
   }
   .second-jumbo h2 {
     font-family: Poppins;

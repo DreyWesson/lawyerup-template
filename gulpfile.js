@@ -1,8 +1,13 @@
-const { src, dest } = require("gulp");
-const imagemin = require("gulp-imagemin");
-const imageminMozjpeg = require("imagemin-mozjpeg");
-const imageResize = require("gulp-image-resize");
-const rename = require("gulp-rename");
+const { src, dest, series, parallel } = require("gulp"),
+  imagemin = require("gulp-imagemin"),
+  imageminMozjpeg = require("imagemin-mozjpeg"),
+  imageResize = require("gulp-image-resize"),
+  rename = require("gulp-rename"),
+  useref = require("gulp-useref"),
+  terser = require("gulp-terser"),
+  gulpIf = require("gulp-if"),
+  cssnano = require("gulp-cssnano"),
+  cache = require("gulp-cache");
 
 const images = () => {
   const sizes = [
@@ -16,19 +21,42 @@ const images = () => {
       .pipe(imageResize({ width: size.width }))
       .pipe(rename((path) => (path.basename += `-${size.suffix}`)))
       .pipe(
-        imagemin(
-          [
-            imageminMozjpeg({
-              quality: size.quality,
-            }),
-          ],
-          { verbose: true }
+        cache(
+          imagemin(
+            [
+              imageminMozjpeg({
+                quality: size.quality,
+              }),
+            ],
+            { verbose: true }
+          )
         )
       )
       .pipe(dest("dist/images"));
   });
   return stream;
 };
+let minifier = () => {
+  return (
+    src("src/index.html")
+      .pipe(useref())
+      // Minifies only if it's a JavaScript file
+      .pipe(gulpIf("*.js", terser()))
+      // Minifies only if it's a CSS file
+      .pipe(gulpIf("*.css", cssnano()))
+      .pipe(dest("dist"))
+  );
+};
+const copyFontawesome = () => {
+  return src("/src/**/*").pipe(dest("dist/fontawesome"));
+};
 
+exports.minifier = minifier;
 exports.images = images;
-exports.default = images;
+exports.copyFontawesome = copyFontawesome;
+// exports.copyBootstrap = copyBootstrap;
+// exports.copyJquery = copyJquery;
+// exports.copyJS = copyJS;
+// exports.copyPopper = copyPopper;
+
+exports.default = parallel(images, minifier, copyFontawesome);
