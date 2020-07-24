@@ -1,0 +1,27 @@
+{
+  "name": "Lawyerup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreyWesson/lawyerup-template.git"
+  },
+  "keywords": [],
+  "author": "dreywesson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DreyWesson/lawyerup-template/issues"
+  },
+  "homepage": "https://github.com/DreyWesson/lawyerup-template#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "imagemin-mozjpeg": "^9.0.0"
+  }
+}

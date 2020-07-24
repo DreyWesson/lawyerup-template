@@ -1,0 +1,655 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Navigation 
+   ============================= */
+nav {
+  background-color: white;
+  /* padding-top: 70px; */
+}
+a.navbar-brand {
+  /* font-family: "Merienda One", cursive; */
+  font-family: Cochin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #333333;
+}
+#wellcome a {
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+li a {
+  font-family: "Poppins", sans-serif;
+}
+/* Jumbotron 
+   ============================= */
+.jumbotron {
+  color: white;
+  /* height: 350px; */
+  height: 50vh;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url("/dist/lawyer-up-small.jpeg");
+  background-size: cover;
+  background-position: center left;
+}
+#jumboBtn {
+  height: 100vh;
+  margin-top: 1.5em;
+}
+.jumbotron h1 {
+  font-size: 1.5em;
+}
+.jumbotron p.lead {
+  font-size: 1em;
+}
+.jumbo {
+  padding-left: 0;
+}
+.jumbo h1 {
+  width: 250px;
+  height: 80px;
+  left: 50px;
+  top: 100px;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 24px;
+  line-height: 40px;
+}
+.jumbo button {
+  background-color: #f2c64d;
+  border-radius: 5px;
+}
+.jumbo a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #333333;
+  font-size: 18px;
+}
+
+/* About - Who We Are 
+   ============================= */
+.justice-content {
+  margin-right: 25px;
+  margin-top: 60px;
+}
+#about .justice-img {
+  transform: translate(-74%, 60%);
+  z-index: 2;
+}
+#about .justice-img-container {
+  height: 0px;
+}
+.heading-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  width: 175px;
+  height: 38px;
+  left: 750px;
+  top: 954px;
+  color: #333333;
+}
+p.normal-text {
+  left: 750px;
+  top: 1016px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 35px;
+  color: #333333;
+}
+
+.stats {
+  color: #f4f4f4;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/dist/civic-hall-small.jpg");
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  width: 100%;
+}
+.stats h4 {
+  margin-bottom: 0;
+}
+.stats p {
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  color: #f4f4f4;
+  margin-top: 0;
+}
+
+.second-jumbo h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 81px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.second-jumbo p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1em;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  max-width: 75ch;
+  margin: auto;
+}
+.second-jumbo button {
+  /* opacity: 0; */
+  color: white;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+.second-jumbo a {
+  color: #ffffff;
+}
+
+.second-jumbo .jumbotron {
+  color: white;
+  height: 350px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/dist/shelf-small.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.second-jumbo {
+  margin-bottom: 80px;
+}
+
+.vector1 {
+  width: 59px;
+  margin: 0;
+  border: 2px solid #f2c64d;
+}
+.vector2 {
+  width: 69px;
+  margin: 0 auto;
+  border: 2px solid #f2c64d;
+}
+.vector3 {
+  width: 69px;
+  margin: 0 auto;
+  border: 2px solid #f2c64d;
+}
+.vector4 {
+  width: 49px;
+  /* margin: 0 auto; */
+  border: 1px solid #f2c64d;
+}
+
+/* Owl Carousel 
+   ============================= */
+.owl-theme .owl-nav {
+  padding: 0;
+  margin: 0;
+}
+.owl-carousel .owl-stage {
+  margin-bottom: 0px;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: 160px;
+  left: -20px;
+  font-size: 40px;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: 160px;
+  right: -25px;
+  font-size: 20px;
+}
+
+.owl-nav .owl-next .fa-angle-right,
+.owl-nav .owl-prev .fa-angle-left {
+  font-size: 20px;
+  color: #fcba07;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #fcba07;
+  opacity: 0.5;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #fcba07;
+  opacity: 1;
+}
+/* Practice Area 
+   ============================= */
+.practice h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+}
+.practice p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+/* Practice Area 
+   ============================= */
+.card1 {
+  max-width: 100%;
+  height: 374px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/dist/card1b-small.jpeg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.card2 {
+  max-width: 100%;
+  height: 374px;
+  object-fit: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/dist/attorney2-small.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.card3 {
+  max-width: 100%;
+  height: 374px;
+  object-fit: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("/dist/lawyerup12-small.png");
+  background-size: cover;
+  background-position: center center;
+}
+.card4 {
+  max-width: 100%;
+  height: 374px;
+  object-fit: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/dist/lawyerup11-small.png");
+  background-size: cover;
+  background-position: center center;
+}
+i {
+  color: #f2c64d;
+  margin-bottom: 30px;
+}
+.card1 h4 {
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: bold;
+}
+.card1 p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+}
+/* Our attorneys 
+   ============================= */
+.card-sec-1 {
+  max-width: 100%;
+  height: 374px;
+  max-height: 374px;
+  background-image: url("/dist/harvey2-large.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: auto 10px;
+  /* max-height: 100%; */
+}
+.card-sec-2 {
+  max-width: 100%;
+  height: 374px;
+  max-height: 374px;
+  background-image: url("/dist/jessica2-large.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center -5px;
+  width: 100%;
+  margin: auto 10px;
+  /* max-height: 100%; */
+}
+.card-sec-3 {
+  max-width: 100%;
+  height: 374px;
+  max-height: 374px;
+  background-image: url("/dist/lawyerssss-large.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: -85px center;
+  width: 100%;
+  margin: auto 10px;
+  /* max-height: 100%; */
+}
+.card-sec-4 {
+  max-width: 100%;
+  height: 374px;
+  max-height: 374px;
+  background-image: url("/dist/lawyer5-large.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: auto 10px;
+  /* max-height: 100%; */
+}
+
+.attorneys {
+  background-color: #2c2f3a;
+  color: #ffffff;
+}
+.attorneys h3 {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #fffdf8;
+}
+.attorneys p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fffdf8;
+}
+.attorneys h4 {
+  font-size: 16px;
+  line-height: 27px;
+  color: #fffdf8;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.attorneys p.tail {
+  font-size: 14px;
+  line-height: 24px;
+  color: #f2c64d;
+  margin-bottom: 2px;
+  text-align: left;
+}
+/* Testimonials 
+   ============================= */
+.testify-img {
+  height: 70px;
+  transform: translate(30%, 20%);
+}
+
+.smilingman {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 110px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  background-image: url("/dist/lawyerup-small.jpeg");
+  background-size: cover;
+  background-position: center right;
+  background-clip: padding-box;
+}
+.smilingman.card2 {
+  background-image: url("https://source.unsplash.com/400x200/?avatar,face");
+  background-position: center center;
+}
+.smilingman.card3 {
+  background-image: url("https://source.unsplash.com/400x200/?random,person");
+  background-position: center center;
+}
+.smilingman.card4 {
+  background-image: url("https://source.unsplash.com/400x200/?random,profile");
+  background-position: center center;
+}
+
+.testify-head {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 10px;
+  color: #2f2e2e;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.testify-content {
+  width: 250;
+  height: 350px;
+  background: #fff;
+  padding: 10px;
+  border: 2px solid #2c2f3a;
+  text-align: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.testify-text {
+  padding-top: 77px;
+  margin: auto;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 31px;
+  color: #2f2e2e;
+}
+/* Contact Us
+   ============================= */
+.contact {
+  background-image: url("/dist/contact-img-medium.png");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.contact-mail {
+  padding: 30px 10px;
+  margin: 50px 0;
+}
+.contact-address {
+  padding: 30px 0px;
+  margin: 20px 0;
+  background: #2c2f3a;
+}
+.contact-address pre {
+  border-bottom: 0.2px solid #2c2f3a;
+  padding-bottom: 20px;
+}
+
+/* Contact Us
+   ============================= */
+footer p {
+  color: #fff;
+  line-height: 30px;
+}
+footer h2,
+footer h3 {
+  color: #fff;
+  font-size: 18px;
+}
+footer h2 {
+  font-size: 18px;
+}
+.footer-top {
+  background: #2c2f3a;
+  padding: 15px 0;
+}
+.segment-one {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.segment-one h2 {
+  font-size: 30px;
+  color: #f2c64d;
+}
+.segment-one p {
+  line-height: 40px;
+}
+.segment-one h2 {
+  font-family: Cochin;
+  color: #fff;
+  text-transform: uppercase;
+}
+.segment-one a {
+  background: #f2c64d;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.segment-one a i {
+  font-size: 20px;
+  color: #2c2f3a;
+  font-weight: bold;
+  padding: 8px 8px;
+  object-fit: cover;
+}
+.segment-two h2:before {
+  content: " | ";
+  color: #ffc107;
+  padding-right: 10px;
+}
+.segment-two ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.segment-two ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 30px;
+}
+.segment-two ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.media {
+  color: #fff;
+}
+.media i {
+  color: #fff;
+  font-size: 25px;
+}
+.segment-three h2:before {
+  content: " | ";
+  color: #ffc107;
+  padding-right: 10px;
+}
+
+.segment-four h2 {
+  color: #fff;
+  text-decoration: uppercase;
+}
+.segment-four h2:before {
+  content: " | ";
+  color: #ffc107;
+  padding-right: 10px;
+}
+#basic-addon2 {
+  background: #ffc107;
+  color: #2c2f3a;
+  border: 1px solid #ffc107;
+  font-weight: bold;
+}
+hr {
+  height: 0.5px;
+  background-color: #ccc;
+  border: none;
+}
+.footer-bottom-text {
+  text-align: center;
+  background: #2c2f3a;
+  line-height: 75px;
+  margin-bottom: 0;
+}
+/* Responsiveness
+   ============================= */
+@media screen and (min-width: 574px) {
+  .jumbotron {
+    height: 70vh;
+    background-image: url("/dist/lawyer-up-large.jpeg");
+  }
+  .stats {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/dist/civic-hall-large.jpg");
+  }
+  .second-jumbo .jumbotron {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/dist/shelf-large.jpg");
+  }
+  .contact {
+    background-image: url("/dist/contact-img-large.png");
+  }
+  .second-jumbo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 81px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+  .second-jumbo p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    max-width: 75ch;
+    margin: auto;
+  }
+
+  #about .justice-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    transform: translateX(50%);
+    z-index: 2;
+  }
+  #about .justice-img-container {
+    height: auto;
+  }
+  #about .court-img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .contact-mail {
+    padding: 50px 50px 50px 50px;
+    /* margin-right: 6em; */
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-mail {
+    padding: 50px 50px 50px 50px;
+    margin-right: 6em;
+  }
+}
