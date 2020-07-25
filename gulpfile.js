@@ -9,15 +9,10 @@ const { src, dest, series, parallel } = require("gulp"),
   cssnano = require("gulp-cssnano"),
   cache = require("gulp-cache");
 
-// const copy = () => {
-//   return src([
-//     "src/fontawesome/**",
-//     "jquery/**",
-//     "owlcarousel/**",
-//     "popper/**",
-//   ]).pipe(dest("dist/"));
-// };
-// exports.copy = copy;
+const copy = () => {
+  return src(["src/js/*.js"]).pipe(dest("dist/js"));
+};
+exports.copy = copy;
 const images = () => {
   const sizes = [
     { width: 1536, quality: 30, suffix: "large" },
