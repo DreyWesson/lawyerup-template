@@ -56,4 +56,4 @@ let minifier = () => {
 exports.minifier = minifier;
 exports.images = images;
 
-exports.default = parallel(images, minifier);
+exports.default = parallel(images, minifier, copy);
