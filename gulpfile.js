@@ -9,6 +9,15 @@ const { src, dest, series, parallel } = require("gulp"),
   cssnano = require("gulp-cssnano"),
   cache = require("gulp-cache");
 
+// const copy = () => {
+//   return src([
+//     "src/fontawesome/**",
+//     "jquery/**",
+//     "owlcarousel/**",
+//     "popper/**",
+//   ]).pipe(dest("dist/"));
+// };
+// exports.copy = copy;
 const images = () => {
   const sizes = [
     { width: 1536, quality: 30, suffix: "large" },
@@ -36,6 +45,7 @@ const images = () => {
   });
   return stream;
 };
+
 let minifier = () => {
   return (
     src("src/index.html")
@@ -47,16 +57,8 @@ let minifier = () => {
       .pipe(dest("dist"))
   );
 };
-const copyFontawesome = () => {
-  return src("/src/**/*").pipe(dest("dist/fontawesome"));
-};
 
 exports.minifier = minifier;
 exports.images = images;
-exports.copyFontawesome = copyFontawesome;
-// exports.copyBootstrap = copyBootstrap;
-// exports.copyJquery = copyJquery;
-// exports.copyJS = copyJS;
-// exports.copyPopper = copyPopper;
 
-exports.default = parallel(images, minifier, copyFontawesome);
+exports.default = parallel(images, minifier);

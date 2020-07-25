@@ -38,7 +38,7 @@ li a {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  background-image: url("../dist/images/lawyer-up-small.jpeg");
+  background-image: url("/dist/images/lawyer-up-small.jpeg");
   background-size: cover;
   background-position: center left;
 }
