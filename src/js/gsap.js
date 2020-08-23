@@ -1,10 +1,10 @@
 gsap.registerPlugin(ScrollTrigger);
-const toggler = document.querySelector(".navbar-toggler");
+const toggler = document.querySelector(".navbar-toggler-icon");
 const tl = new TimelineMax({ paused: true, reversed: true });
 const tl2 = new TimelineMax();
-if (window.innerWidth <= 500) {
+if (window.innerWidth <= 991) {
   toggler.addEventListener("click", (_) => {
-    tl.from("li", {
+    tl.from(".nav-item", {
       duration: 1,
       x: -50,
       opacity: 0,
