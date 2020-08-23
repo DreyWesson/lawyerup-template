@@ -1,14 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
-const toggler = document.querySelector(".navbar-toggler-icon");
+const toggler = document.querySelector(".toggleButton");
 const tl = new TimelineMax({ paused: true, reversed: true });
 const tl2 = new TimelineMax();
 if (window.innerWidth <= 991) {
   toggler.addEventListener("click", (_) => {
     tl.from(".nav-item", {
       duration: 1,
-      x: -50,
+      x: 350,
       opacity: 0,
-      stagger: 0.1,
+      stagger: 0.05,
       ease: "back",
     });
     tl.reversed() ? tl.play() : tl.reversed();
